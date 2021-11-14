@@ -13,183 +13,51 @@ class My_info extends StatelessWidget {
         centerTitle: true,
       ),
       body: SafeArea(
-        child: Column(
-          // verticalDirection: ,
-          //mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            // Center(
-            //  child:
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  //alignment: MainAxisAlignment.center,
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.all(5),
-
-                  width: 100,
-                  height: 100,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      "Container - 01",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
+        child: Center(
+          child: Column(
+            // verticalDirection: ,
+            //mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                radius: 50,
+                // backgroundColor: Colors.red,
+                backgroundImage: AssetImage('images/a.png'),
+              ),
+              Text(
+                "Nahidul Islam Shakin",
+                style: TextStyle(
+                    fontFamily: 'Pacifico',
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+              Text(
+                "Software developer",
+                style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black),
+              ),
+              Divider(
+                endIndent: 100,
+                indent: 100,
+                height: 10,
+                color: Colors.white,
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                width: 300,
+                height: 50,
+                color: Colors.white,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [Icon(Icons.phone_android), Text("+8801954841508")],
                 ),
-
-                //   ),
-                //  Center(
-                // child:
-                Container(
-                  //alignment: MainAxisAlignment.center,
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.all(5),
-                  width: 100,
-                  height: 100,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      "Container - 02",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-                // ),
-                //   Center(
-                //child:
-                Container(
-                  //alignment: MainAxisAlignment.center,
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.all(5),
-                  width: 100,
-                  height: 100,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      "Container - 03",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  //alignment: MainAxisAlignment.center,
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.all(5),
-
-                  width: 100,
-                  height: 100,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      "Container - 01",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-
-                //   ),
-                //  Center(
-                // child:
-                Container(
-                  //alignment: MainAxisAlignment.center,
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.all(5),
-                  width: 100,
-                  height: 100,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      "Container - 02",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-                // ),
-                //   Center(
-                //child:
-                Container(
-                  //alignment: MainAxisAlignment.center,
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.all(5),
-                  width: 100,
-                  height: 100,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      "Container - 03",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  //alignment: MainAxisAlignment.center,
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.all(5),
-
-                  width: 100,
-                  height: 100,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      "Container - 01",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-
-                //   ),
-                //  Center(
-                // child:
-                Container(
-                  //alignment: MainAxisAlignment.center,
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.all(5),
-                  width: 100,
-                  height: 100,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      "Container - 02",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-                // ),
-                //   Center(
-                //child:
-                Container(
-                  //alignment: MainAxisAlignment.center,
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.all(5),
-                  width: 100,
-                  height: 100,
-                  color: Colors.black,
-                  child: Center(
-                    child: Text(
-                      "Container - 03",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
+              )
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
