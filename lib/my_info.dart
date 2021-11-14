@@ -55,6 +55,16 @@ class My_info extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [Icon(Icons.phone_android), Text("+8801954841508")],
                 ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                width: 300,
+                height: 50,
+                color: Colors.white,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [Icon(Icons.email), Text("+8801954841508")],
+                ),
               )
             ],
           ),
